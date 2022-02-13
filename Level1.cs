@@ -5,11 +5,12 @@ namespace Rpg
 {
     public class LevelOne 
     {  
+        Player playerInfo;
         public LevelOne()
         {
-
+            this.playerInfo = playerInfo;
         } 
-        public static void Start()
+        public static void Start(Player playerinfo)
         {
         Console.WriteLine("You wake up with a mind blowing headache, the last you remember is sitting at home and writing a lot of code in some weird language called c#.");
             Console.WriteLine("");
@@ -93,7 +94,7 @@ namespace Rpg
             Console.Write("Enter you name: ");
             string name = Console.ReadLine();
             Console.WriteLine("");
-            Console.WriteLine("Come inside, quick before some one sees you " + "player.name" +"!" + " We have a quest for you Sir.");
+            Console.WriteLine("Come inside, quick before some one sees you " + this.playerInfo +"!" + " We have a quest for you Sir.");
         
             Thread.Sleep(2000);
             Console.WriteLine("");
