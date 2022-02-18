@@ -21,9 +21,10 @@ namespace Rpg
             //GAME STARTS
             Console.WriteLine("What is your name?");
             string nameInput = Console.ReadLine();
-            Player playerInfo = new Player(nameInput);
+            Player character = new Player(nameInput, "fgfgas");
+            LevelOne lvl1 = new LevelOne(character);
             
-            LevelOne.Start(playerInfo);
+            lvl1.Start();
             
 
         }

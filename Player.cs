@@ -2,14 +2,16 @@ using System;
 
 namespace Rpg
 {
-    class Player
+    public class Player
     {
         public string name;
+        public string proffesion;
         public int healt = 10;
         
-        public Player(string name)
+        public Player(string name, string proffesion)
         {
             this.name = name;
+            this.proffesion = name;
         }
         public override string ToString()
         {

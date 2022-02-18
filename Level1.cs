@@ -5,13 +5,14 @@ namespace Rpg
 {
     public class LevelOne 
     {  
-        Player playerInfo;
-        public LevelOne()
+        Player character;
+        public LevelOne(Player character)
         {
-            this.playerInfo = playerInfo;
+            this.character = character;
         } 
-        public static void Start(Player playerinfo)
+        public void Start()
         {
+        Console.Clear();
         Console.WriteLine("You wake up with a mind blowing headache, the last you remember is sitting at home and writing a lot of code in some weird language called c#.");
             Console.WriteLine("");
             Thread.Sleep(2000);
@@ -91,11 +92,10 @@ namespace Rpg
             Thread.Sleep(2000);
             Console.WriteLine();
             Console.WriteLine("A man opens the door. Welcome Sir, we have been waiting on you...... Tell us your name!");
-            Console.Write("Enter you name: ");
-            string name = Console.ReadLine();
+            Thread.Sleep(2000);
             Console.WriteLine("");
-            Console.WriteLine("Come inside, quick before some one sees you " + this.playerInfo +"!" + " We have a quest for you Sir.");
-        
+            Console.WriteLine("Come inside, quick before some one sees you " + character.name +"." + " We have a quest for you Sir.");
+    
             Thread.Sleep(2000);
             Console.WriteLine("");
             Console.Write("Our beloved daughter has been kidnapped by the EVIL cave troll");
