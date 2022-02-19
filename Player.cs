@@ -11,11 +11,11 @@ namespace Rpg
         public Player(string name, string proffesion)
         {
             this.name = name;
-            this.proffesion = name;
+            this.proffesion = proffesion;
         }
-        public override string ToString()
+        /*public override string ToString()
         {
             return this.name;
-        }
+        }*/
     }
 } 

@@ -91,7 +91,7 @@ namespace Rpg
             // INSIDE HOUSE
             Thread.Sleep(2000);
             Console.WriteLine();
-            Console.WriteLine("A man opens the door. Welcome Sir, we have been waiting on you...... Tell us your name!");
+            Console.WriteLine("A man opens the door. Welcome Sir, we have been waiting on you......");
             Thread.Sleep(2000);
             Console.WriteLine("");
             Console.WriteLine("Come inside, quick before some one sees you " + character.name +"." + " We have a quest for you Sir.");
@@ -102,7 +102,7 @@ namespace Rpg
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write(" HEIKKI! ");
             Console.ResetColor();
-            Console.WriteLine("We need you to free her nobel knight");
+            Console.WriteLine("We need you to free her nobel " + character.proffesion + "!");
             Console.WriteLine("");
             
         }
